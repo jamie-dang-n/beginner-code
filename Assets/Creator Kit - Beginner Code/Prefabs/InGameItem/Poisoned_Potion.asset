@@ -16,4 +16,19 @@ MonoBehaviour:
   ItemSprite: {fileID: 0}
   Description: 
   WorldObjectPrefab: {fileID: 0}
-  UsageEffects: []
+  UsageEffects:
+  - {fileID: 1168816402730295095}
+--- !u!114 &1168816402730295095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf682133063121a4b951d6ffc28e5bf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Description: 
+  PoisonAmount: -10
