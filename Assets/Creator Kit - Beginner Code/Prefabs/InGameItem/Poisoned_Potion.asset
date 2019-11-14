@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Poisoned_Potion
   m_EditorClassIdentifier: 
   ItemName: 
-  ItemSprite: {fileID: 0}
-  Description: 
-  WorldObjectPrefab: {fileID: 0}
+  ItemSprite: {fileID: 21300000, guid: 3c9b1bd688b22324c9bc5eb12cc12aea, type: 3}
+  Description: Poisons the player for 10 health
+  WorldObjectPrefab: {fileID: 5898196935238221940, guid: 9be663f1d15d2a74395a9b0ff319d423,
+    type: 3}
   UsageEffects:
   - {fileID: 1168816402730295095}
 --- !u!114 &1168816402730295095
@@ -30,5 +31,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf682133063121a4b951d6ffc28e5bf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Description: 
+  Description: Removes 10 health
   PoisonAmount: -10
