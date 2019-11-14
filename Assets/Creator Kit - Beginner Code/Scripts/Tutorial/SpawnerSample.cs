@@ -31,13 +31,13 @@ public class SpawnerSample : MonoBehaviour
         int angle;
         int step;
 
-        LootAngle(int increment)
+       public LootAngle(int increment)
         {
             step = increment;
             angle = 0;
         }
 
-        int NextAngle()
+        public int NextAngle()
         {
             int currentAngle = angle;
             angle = Helpers.WrapAngle(angle + step);
