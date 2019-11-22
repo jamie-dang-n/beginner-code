@@ -4,6 +4,10 @@ using CreatorKitCode;
 public class SpawnerSample : MonoBehaviour
 {
     public GameObject ObjectToSpawn;
+    Vector3 spawnPosition;
+    Vector3 direction;
+    int angle;
+    int distance;
 
     void Start()
     {
@@ -17,11 +21,12 @@ public class SpawnerSample : MonoBehaviour
 
     void SpawnPotion(int angle)
     {
-        int radius = 5;
-        Vector3 spawnPosition = transform.position;
+        spawnPosition = transform.position;
 
-        Vector3 direction = Quaternion.Euler(0, angle, 0) * Vector3.right;
-        spawnPosition = transform.position + direction * radius;
+        angle = Random.Range(0, 360);
+        distance = Random.Range(2, 15);
+        direction = Quaternion.Euler(0, angle, 0) * Vector3.right;
+        spawnPosition = transform.position + direction * distance;
         Instantiate(ObjectToSpawn, spawnPosition, Quaternion.identity);
     }
 
