@@ -17,6 +17,8 @@ public class SpawnerSample : MonoBehaviour
         SpawnPotion(myLootAngle.NextAngle());
         SpawnPotion(myLootAngle.NextAngle());
         SpawnPotion(myLootAngle.NextAngle());
+        SpawnPotion(myLootAngle.NextAngle());
+        SpawnPotion(myLootAngle.NextAngle());
     }
 
     void SpawnPotion(int angle)
